@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  overflow: hidden; /* Чтобы страница не скроллилась вверх-вниз при кликах */
+  user-select: none; /* Запрещает выделение текста/картинки при клике */
+  -webkit-tap-highlight-color: transparent; /* Убирает синюю рамку при нажатии на мобилках */
+}
+
+/* Анимация появления для таблицы лидеров */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
